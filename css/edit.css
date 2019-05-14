@@ -1,0 +1,266 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+ul.nav-dash {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5DBCD2;
+  }
+  
+  .container .c-shild
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .c-shild .dash
+  {
+    background-color: #5DBCD2;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    max-width: 357px;
+  }
+  
+  ul.nav-dash li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.nav-dash li a:hover:not(.active) {
+    background-color: #ffca3f;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+.box-product 
+{
+  background-color: #033C6F;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.box-product *
+{
+  display: block;
+}
+
+.c-shild .dash .img-h 
+{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 1px solid;
+    font-size: -webkit-xxx-large;
+    cursor: pointer;
+}
+
+.pagination a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+.hidden {
+	display: none;
+}
+
+.content-dash
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.c-dash-fixer
+{
+    max-width: 370px;
+    width: 370px;
+}
+
+.cotent-holder
+{
+    max-width: 700px;
+}
+.table-dash
+{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-dash, td,th
+{
+    border: 1px solid #ffffff;
+}
+
+.table-dash td
+{
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+}
+.table-dash tr:nth-child(even)
+{
+    background-color: #f5f5f5;
+}
+.table-dash tr:nth-child(even):hover
+{
+    background-color: #e9e9e9;
+}
+
+.table-dash tr:nth-child(odd):not(.head)
+{
+    background-color: #f2f2f2;
+}
+.table-dash tr:nth-child(odd):not(.head):hover
+{
+    background-color: #dbd9d9;
+}
+.table-dash .head
+{
+    color: white;
+    padding: 10px;
+    height: 40px;
+    background-color: #5DBCD2;
+}
+
+.btn-d
+{
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 8px;
+    background-color: #FF6B6B;
+    border: 1px solid rgb(224, 94, 94);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-d:hover
+{
+    background-color: rgb(252, 87, 87);
+}
+.btn-d a
+{
+    text-decoration: none;
+    color: #f7f7f7;
+}
+.form-l
+{
+    height: 800px;
+    display: block;
+    background-color:  #5DBCD2;
+    margin: auto;
+    margin: 160px auto;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.form-l .input-l
+{
+    margin:auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 75%;
+    border: 1px solid rgb(231, 226, 228);
+    border-radius: 5px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-l .input-lable
+{
+    margin:auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 75%;
+    border-bottom: 1px solid rgb(231, 226, 228);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:white;
+}
+.form-l .input-l:hover{
+    background-color: #ffffff;
+}
+.form-l .btn-l
+{
+    position: relative;
+    margin: 10px;
+    display: block;
+    background-color: #FF5733;
+    width: 100px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 31px;
+    color: #efefef;
+    cursor: pointer;
+
+}
+
+.btn-ld
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.l-r
+{
+    color: #efefef;
+    display: block;
+    margin: 15px;
+}
+.lb
+{
+    color: #efefef;
+    padding: 10px;
+}
+.img-prev
+{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img-prev > img
+{
+    max-width: 80%;
+}

@@ -1,0 +1,99 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+body
+{
+    background-color:#ececec; 
+}
+.form-l
+{
+    display: block;
+    background-color:  #5DBCD2;
+    margin: auto;
+    margin: 400px auto;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.form-l .input-l
+{
+    margin:auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 75%;
+    border: 1px solid rgb(231, 226, 228);
+    border-radius: 5px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-l .input-l:hover{
+    background-color: #ffffff;
+}
+.form-l .btn-l
+{
+    margin: 10px;
+    display: block;
+    background-color: #FF5733;
+    width: 100px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 31px;
+    color: #efefef;
+    cursor: pointer;
+
+}
+
+.btn-ld
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.l-r
+{
+    color: #efefef;
+    display: block;
+    margin: 15px;
+}
+.lb
+{
+    color: #efefef;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 760px)
+{
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 90%;}
+    .col-7 {width: 90%;}
+    .col-8 {width: 90%;}
+    .col-9 {width: 90%;}
+    .col-10 {width: 90%;}
+    .col-11 {width: 90%;}
+    .col-12 {width: 100%;}
+}
