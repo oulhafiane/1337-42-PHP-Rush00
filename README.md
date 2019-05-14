@@ -8,7 +8,7 @@ The following recommendations are all part of the defence scale. Be very careful
 • Javascript libraries are authorized only for the bonus part.  
 • This project will be corrected by humans only.  
 • You have to handle errors carefully. (ex: no SQL Injection should be possible).  
-• Object oriented programmation is forbidden (check out mysqli’s procedural mode).  
+• **Object oriented programmation is forbidden** (check out mysqli’s procedural mode).  
 • Remember to maintain your own logic in the hierarchy and structure of your project.  
 • Anything not specifically authorized is therefore forbidden.  
 • You can ask your questions on the forum, on slack...  
