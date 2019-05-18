@@ -55,3 +55,7 @@ I did not sleep at all that night until I corrected the project
 We could not do everything we were told, but we did the majority
 And we got 77/100 :)
 
+## Screenshots
+![index](https://github.com/oulhafiane/1337-42-PHP-Rush00/blob/master/resources/readme/index.png?raw=true)  
+![categories](https://github.com/oulhafiane/1337-42-PHP-Rush00/blob/master/resources/readme/categorie.png?raw=true)  
+![basket](https://github.com/oulhafiane/1337-42-PHP-Rush00/blob/master/resources/readme/panier.png?raw=true)
