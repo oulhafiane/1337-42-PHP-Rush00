@@ -1,6 +1,6 @@
 <?php
-$host = 'mysql:3306';
+$host = 'localhost:3306';
 $db = 'rush00';
-$user = 'root';
-$pass = 'tiger';
+$user = 'roger';
+$pass = '123456';
 ?>
