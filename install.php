@@ -31,14 +31,14 @@ if (!$link)
 $create_db = "CREATE DATABASE IF NOT EXISTS $db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 $success_create_db = "Database $db created successfully<br />";
 $fail_create_db = "Error creating database $db: ".mysqli_error($link)."<br />";
-$create_users = "CREATE TABLE IF NOT EXISTS users (login varchar(256) PRIMARY KEY, passwd varchar(128), admin bit DEFAULT 0, token varchar(256))";
+$create_users = "CREATE TABLE IF NOT EXISTS users (login varchar(255) PRIMARY KEY, passwd varchar(128), admin bit DEFAULT 0, token varchar(255))";
 $add_admin = "INSERT INTO users VALUES('admin', '".hash("whirlpool", "toor")."', 1, '')";
 $add_zakariaa = "INSERT INTO users VALUES('zakariaa', '".hash("whirlpool", "zoulhafi")."', 0, '')";
 $add_guest = "INSERT INTO users VALUES('guest', '".hash("whirlpool", "kak!!akdasjkk3214@@jelkqwekqwnd5342$$@##4adkaslk!ewqe")."', 0, '')";
-$create_category = "CREATE TABLE IF NOT EXISTS categories (id_category int PRIMARY KEY auto_increment, name_category varchar(256) UNIQUE)";
-$create_product = "CREATE TABLE IF NOT EXISTS products (id_product int PRIMARY KEY auto_increment, name_product varchar(256) UNIQUE, price_product REAL, picture_product varchar(256) DEFAULT 'resources/HK962.jpeg', id_category int, CONSTRAINT FK_Product_Category FOREIGN KEY(id_category) REFERENCES categories(id_category))";
+$create_category = "CREATE TABLE IF NOT EXISTS categories (id_category int PRIMARY KEY auto_increment, name_category varchar(255) UNIQUE)";
+$create_product = "CREATE TABLE IF NOT EXISTS products (id_product int PRIMARY KEY auto_increment, name_product varchar(255) UNIQUE, price_product REAL, picture_product varchar(255) DEFAULT 'resources/HK962.jpeg', id_category int, CONSTRAINT FK_Product_Category FOREIGN KEY(id_category) REFERENCES categories(id_category))";
 ft_exec_cmd($link, $create_db, $success_create_db, $fail_create_db);
-$create_basket = "CREATE TABLE IF NOT EXISTS baskets (id_basket int PRIMARY KEY auto_increment, date_basket datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, login varchar(256), purchased bit DEFAULT b'0', CONSTRAINT FK_BASKET_USERS FOREIGN KEY(login) REFERENCES users(login))";
+$create_basket = "CREATE TABLE IF NOT EXISTS baskets (id_basket int PRIMARY KEY auto_increment, date_basket datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, login varchar(255), purchased bit DEFAULT b'0', CONSTRAINT FK_BASKET_USERS FOREIGN KEY(login) REFERENCES users(login))";
 $create_basket_intermidiate = "CREATE TABLE IF NOT EXISTS basket_intermidiate (id_product int, id_basket int, qty int, CONSTRAINT PK_BASKET_INERMIDIATE PRIMARY KEY(id_product, id_basket), CONSTRAINT FK_BASKET_PRODUCTS FOREIGN KEY(id_product) REFERENCES products(id_product), CONSTRAINT FK_BASKET_INTERMIDIATE FOREIGN KEY(id_basket) REFERENCES baskets(id_basket))";
 ft_exec_cmd($link, "use $db", "Using db : $db<br />", "Error using db : $db<br />");
 ft_exec_cmd($link, $create_users, success_table("users"), fail_table($link, "users"));
